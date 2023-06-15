@@ -24,11 +24,15 @@ public partial class HodlHodlClient
         _backendUri = backendUri ?? _backendUri;
     }
 
-    public static (string nonce, string hash) GenerateSigningHash(string apiKey, byte[] signatureKey, out string nonce)
+    public static (string nonce, string hash) GenerateSigningHash(string apiKey, byte[] signatureKey)
     {
-        nonce = DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString();
+        var nonce = DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString();
         var msg = $"{apiKey}:{nonce}";
         return (nonce, Encoders.Hex.EncodeData(Hashes.HMACSHA256(signatureKey, Encoding.UTF8.GetBytes(msg))));
+    }
+    public static (string nonce, string hash) GenerateSigningHash(string apiKey, string signatureKeyHex)
+    {
+        return GenerateSigningHash(apiKey, Encoders.Hex.DecodeData(signatureKeyHex));
     }
 
     public static (byte[] cipher, byte[] salt, int iterations) ParseEncryptedSeed(string encryptedSeed)

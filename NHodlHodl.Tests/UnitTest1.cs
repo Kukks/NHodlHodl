@@ -19,7 +19,6 @@ public class UnitTest1
         uint derivationIndex = 10164;
         var expectedDerivedPrivateKey = "4aca31a8e38da930d260253b8c02191abf4bf40bce355712522ac369229b7ea5";
 
-
         var generatedSeed = HodlHodlClient.DecryptSeed(encryptedSeed, paymentPassword, out var decryptedSeed);
         Assert.Equal(expected, Encoders.Hex.EncodeData(decryptedSeed));
         Assert.Equal(ExtPubKey.Parse(xpub, Network.Main).Derive(derivationIndex).PubKey.WitHash.ToString(),

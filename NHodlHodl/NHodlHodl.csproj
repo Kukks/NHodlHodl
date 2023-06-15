@@ -10,10 +10,21 @@
         <PackageVersion>1.0.0</PackageVersion>
         <Description>C# Client api for HodlHodl</Description>
         <PackageTags>bitcoin,exchange,noncusotdial</PackageTags>
+        <PackageLicenseUrl>https://raw.githubusercontent.com/Kukks/NHodlHodl/master/LICENSE</PackageLicenseUrl>
+        <RepositoryUrl>https://github.com/Kukks/NHodlHodl</RepositoryUrl>
     </PropertyGroup>
 
     <ItemGroup>
       <PackageReference Include="NBitcoin" Version="7.0.26" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include="..\LICENSE">
+        <Link>LICENSE</Link>
+      </Content>
+      <Content Include="..\README.md">
+        <Link>README.md</Link>
+      </Content>
     </ItemGroup>
 
 </Project>
