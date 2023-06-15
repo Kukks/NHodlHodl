@@ -1,0 +1,10 @@
+C:\Git\NHodlHodl\NHodlHodl\bin\Debug\netstandard2.1\NHodlHodl.deps.json
+C:\Git\NHodlHodl\NHodlHodl\bin\Debug\netstandard2.1\NHodlHodl.dll
+C:\Git\NHodlHodl\NHodlHodl\bin\Debug\netstandard2.1\NHodlHodl.pdb
+C:\Git\NHodlHodl\NHodlHodl\obj\Debug\netstandard2.1\NHodlHodl.csproj.AssemblyReference.cache
+C:\Git\NHodlHodl\NHodlHodl\obj\Debug\netstandard2.1\NHodlHodl.GeneratedMSBuildEditorConfig.editorconfig
+C:\Git\NHodlHodl\NHodlHodl\obj\Debug\netstandard2.1\NHodlHodl.AssemblyInfoInputs.cache
+C:\Git\NHodlHodl\NHodlHodl\obj\Debug\netstandard2.1\NHodlHodl.AssemblyInfo.cs
+C:\Git\NHodlHodl\NHodlHodl\obj\Debug\netstandard2.1\NHodlHodl.csproj.CoreCompileInputs.cache
+C:\Git\NHodlHodl\NHodlHodl\obj\Debug\netstandard2.1\NHodlHodl.dll
+C:\Git\NHodlHodl\NHodlHodl\obj\Debug\netstandard2.1\NHodlHodl.pdb
