@@ -7,6 +7,7 @@
         <LangVersion>10</LangVersion>
         <Title>C# Client api for HodlHodl</Title>
         <Authors>Kukks</Authors>
+        <PackageVersion>1.0.0</PackageVersion>
         <Description>C# Client api for HodlHodl</Description>
         <PackageTags>bitcoin,exchange,noncusotdial</PackageTags>
     </PropertyGroup>
