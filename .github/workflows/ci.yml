@@ -29,15 +29,3 @@ jobs:
           VERSION_REGEX: ^\s*<PackageVersion>(.*)<\/PackageVersion>\s*$
           TAG_COMMIT: true
           TAG_FORMAT: NHodlHodl/v*
-      - name: Publish Github Package Registry
-        if: ${{ github.ref == 'refs/heads/master' }} # Publish only when the push is on master
-        uses: Rebel028/publish-nuget@v2.7.0
-        with:
-          PROJECT_FILE_PATH: NHodlHodl/NHodlHodl.csproj
-          NUGET_SOURCE: "https://nuget.pkg.github.com/Kukks"
-          NUGET_KEY: ${{secrets.GH_TOKEN}}
-          PACKAGE_NAME: NHodlHodl
-          INCLUDE_SYMBOLS: false
-          VERSION_REGEX: ^\s*<PackageVersion>(.*)<\/PackageVersion>\s*$
-          TAG_COMMIT: true
-          TAG_FORMAT: NHodlHodl/v*
